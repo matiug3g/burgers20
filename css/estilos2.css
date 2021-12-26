@@ -13,11 +13,11 @@
 
   @font-face{
     font-family: "Fuente1";
-    src: url("/fonts/DINNextLTPro-Regular.woff");
+    src: url("../fonts/DINNextLTPro-Regular.woff");
   }
   @font-face{
     font-family: "Fuente2";
-    src: url("/fonts/DINPro-Regular.woff");
+    src: url("../fonts/DINPro-Regular.woff");
   }
 
 .text-DINNext{
