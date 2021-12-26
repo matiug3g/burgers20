@@ -36,7 +36,7 @@ body{
 
 /* navegación */
 .fondobar{
-    background-image: url(/img/texture.jpg);
+    background-image: url(../img/texture.jpg);
     background-position: center;
     background-size: cover;
 }
