@@ -159,7 +159,7 @@ body {
 }
 
 .hero2 {
-  background-image: url(../img/Portada2.jpg);
+  background-image: url(../img/Portada3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,7 +167,7 @@ body {
 }
 
 .hero3 {
-  background-image: url(../img/Portada4.jpg);
+  background-image: url(../img/Portada1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -476,7 +476,7 @@ textarea {
 }
 
 .textoMenu {
-  background-image: url(../img/Foto1.JPG);
+  background-image: url(../img/Foto18.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
@@ -487,7 +487,7 @@ textarea {
 }
 
 .textoOpinion {
-  background-image: url(../img/Foto1.JPG);
+  background-image: url(../img/Foto2.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
@@ -497,7 +497,7 @@ textarea {
 }
 
 .textoDelivery {
-  background-image: url(../img/Foto1.JPG);
+  background-image: url(../img/Foto6.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
