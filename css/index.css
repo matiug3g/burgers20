@@ -16,3 +16,17 @@ body {
     justify-content: center;
     color: #fff;
   }
+.contenedorHero{
+  margin-top: 250px;
+}
+.btnIngresar{
+
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  font-family: 'Fuente2';
+  font-weight: bolder;
+  font-size: 20px;
+}

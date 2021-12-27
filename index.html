@@ -1,153 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/animate.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/estilos.css">
-  <script src="https://kit.fontawesome.com/25b079f5b4.js" crossorigin="anonymous"></script>
-  <script src="wow/wow.js"></script>
-
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/25b079f5b4.js" crossorigin="anonymous"></script>
+    <script src="wow/wow.js"></script>
+    <title>Burgers20</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fondobar ">
-    <!-- Logo -->
-    <div class="logo">
-      <a href="./index.html" class="active"><img src="./img/Logo.png"></a>
-      <h2 class="navbar-brand" href="#">Burgers<span>20</span></h2>
-    </div>
-    <div class="btnPedido">
-      <a href="https://api.whatsapp.com/send/?phone=5493515584179">Realizar pedido<img
-          src="./img/shopping-bag-regular-24.png"></a>
-    </div>
-    <!-- Botones responsive -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end navbar-dark" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/trabaja.html">Trabaja con nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <section>
-      <div id="carrouselBurger" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicadores -->
-        <ul class="carousel-indicators">
-          <li data-target="#carrouselBurger" data-slide-to="0" class="active"></li>
-          <li data-target="#carrouselBurger" data-slide-to="1"></li>
-          <li data-target="#carrouselBurger" data-slide-to="2"></li>
-        </ul>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-block hero">
-              <div class="wow slideInDown" data-wow-iteration="1">
-                <div class="contenedorHero" class="wow rotateIn">
-                  <h2>YOU'RE IN</h2>
-                  <h1>BURGERS<span>20</span></h1>
-                  <p>Hechas con el <span>corazón</span></p>
-                </div>
-              </div>
+    <main>
+        <div class="d-block">
+            <div class="wow slideInDown" data-wow-iteration="1">
+              <div class="contenedorHero" class="wow rotateIn">
+                <h2>YOU'RE IN</h2>
+                <h1>BURGERS<span>20</span></h1>
+                <p>Hechas con el <span>corazón</span></p>
+                <a class="btn btn-warning btnIngresar" href="index1.html" role="button">Ingresar</a>
+        <div class="footer footerIndex">
+          <div class="container">
+            <div class="row">
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block hero2"></div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-block hero3"></div>
-          </div>
+            <div class="col item social"><a href="http://www.facebook.com/burguers.20"><i class="fab fa-facebook"></i></a><a
+              href="http://www.instagram.com/burgers.20"><i class="fab fa-instagram"></i></a><a
+              href="https://api.whatsapp.com/send/?phone=5493515584179"><i class="fab fa-whatsapp"></i></a></div>
         </div>
-
-        <!-- Controles -->
-        <a class="carousel-control-prev" href="#carrouselBurger" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#carrouselBurger" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-
-      </div>
-
-      <section>
-        <div class="contenedorImgs">
-          <div class="textoUbicacion">
-            <p><a class="btn btn-warning" href="#" role="button">Menu</a></p>
-          </div>
-          <div class="textoMenu">
-            <p><a class="btn btn-warning" href="#" role="button">Productos</a></p>
-          </div>
-          <div class="textoOpinion">
-            <p><a class="btn btn-warning" href="#" role="button">Delivery</a></p>
-          </div>
-          <div class="textoDelivery">
-            <p><a class="btn btn-warning" href="#" role="button">Contacto</a></p>
-          </div>
-        </div>
-      </section>
-  </main>
-  <!-- FOOTER -->
-  <div class="footer">
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3 item">
-            <div class="medioContactos">
-              <h3>About us</h3>
-              <ul>
-                <li><a href="./pages/notfound.html">Preguntas frecuentes</a></li>
-                <li><a href="./pages/notfound.html">Terminos y condiciones</a></li>
-                <li><a href="./pages/notfound.html">Politicas de privacidad</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 item">
-            <h3>Contact</h3>
-            <ul>
-              <li><a href="#">hola@burgers20.com.ar</a></li>
-              <li><a href="#">ventas@burgers20.com.ar</a></li>
-              <li><a href="#">talentos@burgers20.com.ar</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 item text">
-            <h3>We are</h3>
-            <p>Emprendimiento familiar, cordobes, dedicado a la elaboración pura y exclusivamente de burger's gourmet.
-            </p>
-          </div>
-        </div>
-        <div class="col item social"><a href="http://www.facebook.com/burguers.20"><i class="fab fa-facebook"></i></a><a
-            href="http://www.instagram.com/burgers.20"><i class="fab fa-instagram"></i></a><a
-            href="https://api.whatsapp.com/send/?phone=5493515584179"><i class="fab fa-whatsapp"></i></a></div>
-        <p class="copyright">Todos los derechos reservados © 2019-2022</p>
-      </div>
-    </footer>
-  </div>
-  <script src="./js/jquery.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+    </div>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
