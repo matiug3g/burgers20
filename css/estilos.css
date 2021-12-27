@@ -149,22 +149,6 @@ body {
 
 /* FIN DEL NAV */
 
-.imghola {
-  background-image: url(/img/PortadaIndex.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-}
-
-.centerBoton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 /* Carrousel */
 .hero {
   background-image: url(../img/PortadaIndex.jpeg);
@@ -462,7 +446,7 @@ textarea {
 }
 
 .footerIndex {
-  background-color: inherit;
+  background-color:initial;
 }
 
 /* SECTION CONTENEDOR IMGS */
