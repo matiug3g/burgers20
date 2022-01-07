@@ -1,0 +1,98 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/PortadaIndex.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.contenedorHero {
+    margin-top: 250px;
+}
+
+.btnIngresar {
+
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    font-family: 'Fuente2';
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footerIndex {
+    margin-bottom: 200px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .contenedorHero {
+        margin: 10px auto auto auto;
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .contenedorHero {
+        margin: 0;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
+    .contenedorHero {
+        margin: 0;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    }
+}

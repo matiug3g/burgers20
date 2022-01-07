@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* FUENTES LOCALES */
+
+@font-face {
+    font-family: "Fuente1";
+    src: url("../fonts/DINNextLTPro-Regular.woff");
+}
+
+@font-face {
+    font-family: "Fuente2";
+    src: url("../fonts/DINPro-Regular.woff");
+}
+
+@font-face {
+    font-family: "Fuente3";
+    src: url("../fonts/DINNextLTPro-Black.woff");
+}
+
+@font-face {
+    font-family: "Fuente4";
+    src: url("../fonts/din67-webfont.woff");
+}
+
+@font-face {
+    font-family: "Fuente5";
+    src: url("../fonts/trashhand-webfont.woff");
+}
+
+.text-DINNext {
+    font-family: 'Fuente1';
+}
+
+/* FIN de fuentes */
+
+
+header {
+    width: 100%;
+
+}
+
+body {
+    background: white
+}
+
+/* navegación */
+.fondobar {
+    background-image: url(../img/texture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar ul li {
+    padding: 10px;
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    color: #E3B309 !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: 'Fuente2' !important;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+
+    h2 {
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        font-size: 35px;
+        left: 0px;
+        top: 8px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 span {
+        text-transform: uppercase;
+        color: #E3B309;
+        position: absolute;
+    }
+
+
+}
+
+.btnPedido a {
+    font-family: 'Fuente2';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: auto auto auto 800px;
+    background-color: #E3B309;
+    border-radius: 60px;
+    color: #000;
+    font-size: 20px;
+    animation-duration: 3s;
+    animation-name: aparece;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btnPedido a:hover {
+    color: #000 !important;
+}
+
+.btnPedido img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* FIN DEL NAV */
+/* Carrousel */
+@mixin PortadaDatos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.hero {
+    background-image: url(../img/PortadaIndex.jpeg);
+    @include PortadaDatos();
+}
+
+.hero2 {
+    background-image: url(../img/Portada3.jpg);
+    @include PortadaDatos();
+}
+
+.hero3 {
+    background-image: url(../img/Portada1.jpg);
+    @include PortadaDatos();
+}
+
+.contenedorHero {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 36px;
+        color: #E3B309;
+    }
+
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 144px;
+        color: white;
+        margin-top: -30px;
+    }
+
+    h1 span {
+        color: #E3B309;
+    }
+
+    p {
+        font-family: 'Great Vibes', cursive;
+        font-size: 72px;
+        line-height: 0px;
+        font-weight: 700px;
+        margin-top: -35px;
+        color: #E3B309;
+    }
+
+    p span {
+        color: white;
+    }
+}
+
+/* Section productos */
+@mixin sectionVarios {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.sectionProductos {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.sectionNosotros {
+    @include sectionVarios();
+}
+
+.sectionTrabaja {
+    @include sectionVarios();
+}
+
+.sectionContacto {
+    @include sectionVarios();
+}
+
+/* inicio de primera seccion */
+.boxImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 500px;
+        height: 500px;
+        border-radius: 30px;
+        margin: auto 50px;
+    }
+
+}
+
+.boxAll {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100%;
+
+    h2 {
+        font-size: 100px;
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+        font-weight: lighter;
+    }
+
+    p {
+        font-size: 22px;
+        width: 1100px;
+        line-height: 50px;
+    }
+}
+
+/* FORM */
+
+.formulario1 {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: 50px auto 50px auto;
+    width: 800px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1px solid #999;
+    border-radius: 10px;
+
+    input,
+    textarea {
+        outline: none;
+        width: 100%;
+        border: 0;
+    }
+
+    .field {
+        margin-bottom: 20px;
+        border: 1px solid #999;
+        padding: 10px;
+    }
+
+    .field:focus {
+        border: 3px solid #E3B309;
+    }
+}
+
+/* BOTON FORMULARIO */
+.center-content {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 3px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba (255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-yellow {
+    color: white;
+    background-color: #3CC93F;
+}
+
+.btn-yellow:hover {
+    background-color: #37b839;
+}
+
+.btn-yellow:active {
+    background-color: #29962A;
+}
+
+.btn-red {
+    color: white;
+    background-color: #E34242;
+}
+
+.btn-red:hover {
+    background-color: #C43535;
+}
+
+.btn-red:active {
+    background-color: #A62828;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #1D1D1D;
+
+    h3 {
+        font-family: 'Fuente2';
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h3:hover {
+        color: #E3B309;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-bottom: 0;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        a:hover {
+            color: #E3B309;
+        }
+    }
+}
+
+.sectionnotFound {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+@media (max-width:767px) {
+    .footer .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer .item.text {
+    margin-bottom: 36px;
+}
+
+.footer .item.social {
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .footer .item.text {
+        margin-bottom: 0;
+    }
+}
+
+.footer .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+}
+
+.footer .item.social>a:hover {
+    color: #E3B309
+}
+
+.footerIndex {
+    background-color: initial;
+}
+
+/* SECTION CONTENEDOR IMGS */
+.contenedorImgs {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 10px;
+    justify-content: center;
+
+    a {
+        font-family: 'Roboto', cursive;
+        font-size: 25px;
+    }
+}
+
+@mixin configIndexContent() {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    display: grid;
+
+}
+
+.textoUbicacion {
+    background-image: url(../img/Foto1.JPG);
+    @include configIndexContent();
+
+}
+
+.textoMenu {
+    background-image: url(../img/Foto18.JPG);
+    @include configIndexContent();
+
+}
+
+.textoOpinion {
+    background-image: url(../img/Foto2.jpg);
+    @include configIndexContent();
+}
+
+.textoDelivery {
+    background-image: url(../img/Foto6.jpg);
+    @include configIndexContent();
+}
+
+/* fin section contenedor imgs */
+@media only screen and (min-width: 320px) and (max-width: 1900px) {
+    .btnPedido {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .contenedorHero {
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+    }
+
+    .contenedorImgs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    @mixin configIndexMobile {
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+    }
+
+    .textoUbicacion {
+        margin: 50px auto 370px auto;
+        @include configIndexMobile();
+    }
+
+    .textoOpinion {
+        margin: auto;
+        @include configIndexMobile();
+    }
+
+    .textoMenu {
+        margin: auto;
+        @include configIndexMobile();
+    }
+
+    .textoDelivery {
+        margin: auto;
+        @include configIndexMobile();
+    }
+
+    .sectionProductos {
+
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .sectionNosotros {
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .boxImg {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        Img {
+            width: 55%;
+            height: 30%;
+            margin: auto;
+        }
+    }
+
+    .boxSection {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxAll {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+
+        h2 {
+            font-size: 40px;
+            margin: auto;
+        }
+
+        p {
+            line-height: 30px;
+            font-size: 10px;
+            margin: auto;
+            width: 300px;
+
+        }
+
+    }
+
+    .sectionContacto {
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .formulario1 {
+        width: 90%;
+    }
+
+    .sectionTrabaja {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .contenedorHero {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 50px;
+        }
+    }
+
+    .contenedorImgs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    @mixin configIndexMore {
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+    }
+
+    .textoUbicacion {
+        margin: 50px auto 350px auto;
+        @include configIndexMore();
+    }
+
+    .textoOpinion {
+        margin: auto;
+        @include configIndexMore();
+    }
+
+    .textoMenu {
+        margin: auto;
+        @include configIndexMore();
+    }
+
+    .textoDelivery {
+        margin: auto;
+        @include configIndexMore();
+    }
+
+    .sectionProductos {
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .sectionNosotros {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .boxImg {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        Img {
+            width: 55%;
+            height: 30%;
+            margin: auto;
+        }
+    }
+
+    .boxSection {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxAll {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+
+        h2 {
+            font-size: 55px;
+            margin: auto;
+        }
+
+        p {
+            line-height: 30px;
+            font-size: 15px;
+            margin: auto;
+            width: 400px;
+        }
+
+    }
+
+    .sectionContacto {
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .formulario1 {
+        width: 90%;
+    }
+
+    .sectionTrabaja {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
+    .contenedorHero {
+        h2 {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 110px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 55px;
+        }
+    }
+
+    .contenedorImgs {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    @mixin configIndexNotebook {
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+    }
+
+    .textoUbicacion {
+        margin: 80px auto 100px auto;
+        @include configIndexNotebook();
+
+    }
+
+    .textoOpinion {
+        margin: auto;
+        @include configIndexNotebook();
+    }
+
+    .textoMenu {
+        margin: auto auto 11px auto;
+        @include configIndexNotebook();
+    }
+
+    .textoDelivery {
+        margin: auto;
+        @include configIndexNotebook();
+    }
+
+    .sectionProductos {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .sectionNosotros {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .boxImg {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        Img {
+            width: 40%;
+            height: 20%;
+            margin: auto;
+        }
+
+    }
+
+    .boxSection {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxAll {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+
+        h2 {
+            font-size: 60px;
+            margin: auto;
+        }
+
+        p {
+            line-height: 30px;
+            font-size: 15px;
+            margin: auto;
+            width: 600px;
+        }
+    }
+
+    .sectionContacto {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+    .formulario1 {
+        width: 80%;
+    }
+
+    .sectionTrabaja {
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+        margin: 50px auto 50px auto;
+    }
+
+}
