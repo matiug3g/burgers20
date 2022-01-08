@@ -3,11 +3,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -ms-flex-pack: center;
-    -webkit-box-pack: center;
     justify-content: center;
     color: #fff;
 }
@@ -17,7 +13,6 @@ body {
 }
 
 .btnIngresar {
-
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -29,7 +24,7 @@ body {
 }
 
 .footerIndex {
-    margin-bottom: 200px;
+    margin-bottom: 180px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
