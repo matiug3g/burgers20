@@ -57,13 +57,6 @@ body {
   background-size: cover;
 }
 
-.navbar ul li {
-  padding: 10px;
-  display: inline-block;
-  list-style: none;
-  margin: 0 20px;
-}
-
 .navbar a {
   text-decoration: none;
   font-weight: bolder;
@@ -72,6 +65,13 @@ body {
 
 .navbar a:hover {
   color: #E3B309 !important;
+}
+
+.navbar ul li {
+  padding: 10px;
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
 }
 
 .nav-link {
@@ -140,6 +140,16 @@ body {
           animation-iteration-count: infinite;
 }
 
+.btnPedido a:hover {
+  color: #000 !important;
+}
+
+.btnPedido img {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
 @-webkit-keyframes aparece {
   0% {
     opacity: 0;
@@ -156,16 +166,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-.btnPedido a:hover {
-  color: #000 !important;
-}
-
-.btnPedido img {
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
 }
 
 /* FIN DEL NAV */

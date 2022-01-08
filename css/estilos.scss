@@ -41,6 +41,8 @@
     font-family: 'Fuente1';
 }
 
+$colorPrincipal: #E3B309;
+
 /* FIN de fuentes */
 
 
@@ -59,24 +61,24 @@ body {
     background-position: center;
     background-size: cover;
 }
+.navbar {
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    
+    a:hover {
+        color: $colorPrincipal !important;
+    }
+    ul li {
+        padding: 10px;
+        display: inline-block;
+        list-style: none;
+        margin: 0 20px;
+    }
 
-.navbar ul li {
-    padding: 10px;
-    display: inline-block;
-    list-style: none;
-    margin: 0 20px;
 }
-
-.navbar a {
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 22px;
-}
-
-.navbar a:hover {
-    color: #E3B309 !important;
-}
-
 .nav-link {
     color: white !important;
     font-family: 'Fuente2' !important;
@@ -106,29 +108,39 @@ body {
 
     h2 span {
         text-transform: uppercase;
-        color: #E3B309;
+        color: $colorPrincipal;
         position: absolute;
     }
 
 
 }
+.btnPedido{
+        a {
+            font-family: 'Fuente2';
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            margin: auto auto auto 800px;
+            background-color: $colorPrincipal;
+            border-radius: 60px;
+            color: #000;
+            font-size: 20px;
+            animation-duration: 3s;
+            animation-name: aparece;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        a:hover {
+            color: #000 !important;
+        }
+        img {
+            height: 30px;
+            width: 30px;
+            margin-left: 10px;
+        }
 
-.btnPedido a {
-    font-family: 'Fuente2';
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    margin: auto auto auto 800px;
-    background-color: #E3B309;
-    border-radius: 60px;
-    color: #000;
-    font-size: 20px;
-    animation-duration: 3s;
-    animation-name: aparece;
-    animation-delay: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
 }
 
 @keyframes aparece {
@@ -139,16 +151,6 @@ body {
     100% {
         opacity: 1;
     }
-}
-
-.btnPedido a:hover {
-    color: #000 !important;
-}
-
-.btnPedido img {
-    height: 30px;
-    width: 30px;
-    margin-left: 10px;
 }
 
 /* FIN DEL NAV */
@@ -185,7 +187,7 @@ body {
     h2 {
         font-family: 'Rubik', sans-serif;
         font-size: 36px;
-        color: #E3B309;
+        color: $colorPrincipal;
     }
 
     h1 {
@@ -196,7 +198,7 @@ body {
     }
 
     h1 span {
-        color: #E3B309;
+        color: $colorPrincipal;
     }
 
     p {
@@ -205,7 +207,7 @@ body {
         line-height: 0px;
         font-weight: 700px;
         margin-top: -35px;
-        color: #E3B309;
+        color: $colorPrincipal;
     }
 
     p span {
@@ -304,7 +306,7 @@ body {
     }
 
     .field:focus {
-        border: 3px solid #E3B309;
+        border: 3px solid $colorPrincipal;
     }
 }
 
@@ -367,7 +369,7 @@ body {
     }
 
     h3:hover {
-        color: #E3B309;
+        color: $colorPrincipal;
     }
 
     ul {
@@ -384,7 +386,7 @@ body {
         }
 
         a:hover {
-            color: #E3B309;
+            color: $colorPrincipal;
         }
     }
 }
@@ -435,7 +437,7 @@ body {
 }
 
 .footer .item.social>a:hover {
-    color: #E3B309
+    color: $colorPrincipal;
 }
 
 .footerIndex {
