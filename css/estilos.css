@@ -52,7 +52,7 @@ body {
 
 /* navegación */
 .fondobar {
-  background-image: url(../img/texture.jpg);
+  background-image: url(../img/texture.webp);
   background-position: center;
   background-size: cover;
 }
@@ -180,7 +180,7 @@ body {
 /* FIN DEL NAV */
 /* Carrousel */
 .hero {
-  background-image: url(../img/PortadaIndex.jpeg);
+  background-image: url(../img/PortadaIndex.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -371,7 +371,7 @@ body {
   padding: 10px;
 }
 
-.formulario1 .field:focus {
+.formulario1:focus {
   border: 3px solid #E3B309;
 }
 
@@ -538,7 +538,7 @@ body {
 }
 
 .textoUbicacion {
-  background-image: url(../img/Foto1.JPG);
+  background-image: url(../img/Foto1.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
@@ -560,7 +560,7 @@ body {
 }
 
 .textoMenu {
-  background-image: url(../img/Foto18.JPG);
+  background-image: url(../img/Foto18.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
@@ -582,7 +582,7 @@ body {
 }
 
 .textoOpinion {
-  background-image: url(../img/Foto2.jpg);
+  background-image: url(../img/Foto2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
@@ -604,7 +604,7 @@ body {
 }
 
 .textoDelivery {
-  background-image: url(../img/Foto6.jpg);
+  background-image: url(../img/Foto6.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;
