@@ -906,3 +906,21 @@ body {
     }
 
 }
+
+// EJERCICIO SOLO PARA ACTIVIDAD
+// $fondoColor: (
+
+//     bg1: white,
+//     bg2: blue,
+//     bg3: green,
+//     );
+
+// @each $bg, $color in $fondoColor {
+//     .wallpaper--#{$bg} {   
+//         width: 100%;
+//         background-color: $color;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         background-position: center;
+//     } 
+// }    
