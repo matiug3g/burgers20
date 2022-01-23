@@ -307,9 +307,45 @@ body {
 
 .boxImg img {
   width: 500px;
-  height: 500px;
-  border-radius: 30px;
+  border-radius: 800px;
   margin: auto 50px;
+}
+
+.textInBox {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.textInBox img {
+  width: 700px;
+  height: 400px;
+  border-radius: 800px;
+  margin: auto 50px;
+}
+
+.textInBox h2 {
+  font-family: 'Bebas Neue', cursive !important;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  visibility: hidden;
+}
+
+.textInBox:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.textInBox:hover h2 {
+  -webkit-filter: brightness(100%) !important;
+          filter: brightness(100%) !important;
+  visibility: visible;
 }
 
 .boxAll {
@@ -625,6 +661,274 @@ body {
           filter: brightness(90%);
 }
 
+.contenedorProductos {
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (19%)[4];
+      grid-template-columns: repeat(4, 19%);
+  -ms-grid-rows: (35%)[3];
+      grid-template-rows: repeat(3, 35%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+
+.contenedorProductos p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  visibility: hidden;
+}
+
+.productosUno {
+  background-image: url(../img/Foto1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosUno:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosDos {
+  background-image: url(../img/Foto2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosDos:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosTres {
+  background-image: url(../img/Foto3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosTres:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosCuatro {
+  background-image: url(../img/Foto4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosCuatro:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosCinco {
+  background-image: url(../img/Foto5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosCinco:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosSeis {
+  background-image: url(../img/Foto6.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosSeis:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosSiete {
+  background-image: url(../img/Foto7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosSiete:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosOcho {
+  background-image: url(../img/Foto8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosOcho:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosNueve {
+  background-image: url(../img/Foto9.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosNueve:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosDiez {
+  background-image: url(../img/Foto12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosDiez:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosOnce {
+  background-image: url(../img/Foto14.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosOnce:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.productosDoce {
+  background-image: url(../img/Foto18.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.productosDoce:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
 /* fin section contenedor imgs */
 @media only screen and (min-width: 320px) and (max-width: 1900px) {
   .btnPedido {
@@ -687,6 +991,95 @@ body {
             justify-content: center;
     width: 250px;
     height: 250px;
+  }
+  .contenedorProductos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (12%)[10];
+        grid-template-rows: repeat(10, 12%);
+  }
+  .productosUno {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosDos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosTres {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosCuatro {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosCinco {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosSeis {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosSiete {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosOcho {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosNueve {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  .productosDiez {
+    display: none;
+  }
+  .productosOnce {
+    display: none;
+  }
+  .productosDoce {
+    display: none;
   }
   .sectionProductos {
     width: 40px;
@@ -822,6 +1215,122 @@ body {
     width: 350px;
     height: 350px;
   }
+  .contenedorProductos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (20%)[5];
+        grid-template-rows: repeat(5, 20%);
+  }
+  .productosUno {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosDos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosTres {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosCuatro {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosCinco {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosSeis {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosSiete {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosOcho {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosNueve {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosDiez {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosOnce {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .productosDoce {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+  }
   .sectionProductos {
     width: 70px;
     height: 70px;
@@ -898,6 +1407,9 @@ body {
             justify-content: center;
     margin: 50px auto 50px auto;
   }
+  .footer {
+    margin-top: 250px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1600px) {
@@ -954,6 +1466,110 @@ body {
             justify-content: center;
     width: 350px;
     height: 350px;
+  }
+  .contenedorProductos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (27%)[4];
+        grid-template-rows: repeat(4, 27%);
+  }
+  .productosUno {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosDos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosTres {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosCuatro {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosCinco {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosSeis {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosSiete {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosOcho {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosNueve {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosDiez {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosOnce {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+  .productosDoce {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: auto;
   }
   .sectionProductos {
     width: 100px;
@@ -1030,6 +1646,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 50px auto 50px auto;
+  }
+  .footer {
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

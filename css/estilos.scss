@@ -43,6 +43,25 @@
 
 $colorPrincipal: #E3B309;
 
+@mixin transformScale() {
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+
+@mixin brightnessPics() {
+    filter: brightness(40%);
+}
+
+@mixin configIndexContent() {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    display: grid;
+    transition: transform .4s;
+}
+
 /* FIN de fuentes */
 
 
@@ -256,14 +275,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
         width: 500px;
-        height: 500px;
-        border-radius: 30px;
+        border-radius: 800px;
         margin: auto 50px;
     }
 
+    
+
+}
+.textInBox{
+    transition: transform .2s;
+    img {
+        width: 700px;
+        height: 400px;
+        border-radius: 800px;
+        margin: auto 50px;
+    }
+    h2 {
+        font-family: 'Bebas Neue', cursive !important;
+        position: absolute;
+        justify-content: center;
+        color: white;
+        visibility: hidden;
+    }
+    &:hover {
+        transform: scale(1.1);
+        filter: brightness(50%);
+
+        h2 {
+            filter: brightness(100%) !important;
+            visibility: visible;
+        }
+    }
 }
 
 .boxAll {
@@ -469,23 +513,6 @@ body {
     }
 }
 
-@mixin configIndexContent() {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
-    border-radius: 15px;
-    display: grid;
-    transition: transform .4s;
-
-
-}
-
-@mixin transformScale() {
-    transform: scale(1.1);
-    filter: brightness(90%);
-}
-
 .textoUbicacion {
     background-image: url(../img/Foto1.webp);
     @include configIndexContent();
@@ -519,6 +546,133 @@ body {
 
     &:hover {
         @include transformScale();
+    }
+}
+
+.contenedorProductos {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 19%);
+    grid-template-rows: repeat(3, 35%);
+    justify-content: center;
+    margin-bottom: 200px;
+
+    p {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+        visibility: hidden;
+    }
+}
+
+.productosUno {
+    background-image: url(../img/Foto1.webp);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosDos {
+    background-image: url(../img/Foto2.webp);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosTres {
+    background-image: url(../img/Foto3.jpg);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosCuatro {
+    background-image: url(../img/Foto4.jpg);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosCinco {
+    background-image: url(../img/Foto5.jpg);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosSeis {
+    background-image: url(../img/Foto6.webp);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosSiete {
+    background-image: url(../img/Foto7.jpg);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosOcho {
+    background-image: url(../img/Foto8.jpg);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosNueve {
+    background-image: url(../img/Foto9.JPG);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosDiez {
+    background-image: url(../img/Foto12.jpg);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosOnce {
+    background-image: url(../img/Foto14.JPG);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
+    }
+}
+
+.productosDoce {
+    background-image: url(../img/Foto18.webp);
+    @include configIndexContent();
+
+    &:hover {
+        @include brightnessPics();
     }
 }
 
@@ -583,6 +737,67 @@ body {
     .textoDelivery {
         margin: auto;
         @include configIndexMobile();
+    }
+
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 12%);
+    }
+
+    @mixin configProductosMobile {
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .productosUno {
+        @include configProductosMobile();
+    }
+
+    .productosDos {
+        @include configProductosMobile();
+    }
+
+    .productosTres {
+        @include configProductosMobile();
+    }
+
+    .productosCuatro {
+        @include configProductosMobile();
+    }
+
+    .productosCinco {
+        @include configProductosMobile();
+    }
+
+    .productosSeis {
+        @include configProductosMobile();
+    }
+
+    .productosSiete {
+        @include configProductosMobile();
+    }
+
+    .productosOcho {
+        @include configProductosMobile();
+    }
+
+    .productosNueve {
+        @include configProductosMobile();
+    }
+
+    .productosDiez {
+        display: none;
+    }
+
+    .productosOnce {
+        display: none;
+    }
+
+    .productosDoce {
+        display: none;
     }
 
     .sectionProductos {
@@ -712,6 +927,68 @@ body {
         @include configIndexMore();
     }
 
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 20%);
+    }
+
+    @mixin configProductosMore {
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    .productosUno {
+        @include configProductosMore();
+    }
+
+    .productosDos {
+        @include configProductosMore();
+    }
+
+    .productosTres {
+        @include configProductosMore();
+    }
+
+    .productosCuatro {
+        @include configProductosMore();
+    }
+
+    .productosCinco {
+        @include configProductosMore();
+    }
+
+    .productosSeis {
+        @include configProductosMore();
+    }
+
+    .productosSiete {
+        @include configProductosMore();
+    }
+
+    .productosOcho {
+        @include configProductosMore();
+    }
+
+    .productosNueve {
+        @include configProductosMore();
+    }
+
+    .productosDiez {
+        @include configProductosMore();
+    }
+
+    .productosOnce {
+        @include configProductosMore();
+    }
+
+    .productosDoce {
+        @include configProductosMore();
+    }
+
     .sectionProductos {
         width: 70px;
         height: 70px;
@@ -780,6 +1057,9 @@ body {
         margin: 50px auto 50px auto;
     }
 
+    .footer {
+        margin-top: 250px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1600px) {
@@ -836,7 +1116,66 @@ body {
         margin: auto;
         @include configIndexNotebook();
     }
+    .contenedorProductos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 27%);
+    }
 
+    @mixin configProductosNotebook {
+        justify-content: center;
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .productosUno {
+        @include configProductosNotebook();
+    }
+
+    .productosDos {
+        @include configProductosNotebook();
+    }
+
+    .productosTres {
+        @include configProductosNotebook();
+    }
+
+    .productosCuatro {
+        @include configProductosNotebook();
+    }
+
+    .productosCinco {
+        @include configProductosNotebook();
+    }
+
+    .productosSeis {
+        @include configProductosNotebook();
+    }
+
+    .productosSiete {
+        @include configProductosNotebook();
+    }
+
+    .productosOcho {
+        @include configProductosNotebook();
+    }
+
+    .productosNueve {
+        @include configProductosNotebook();
+    }
+
+    .productosDiez {
+        @include configProductosNotebook();
+    }
+
+    .productosOnce {
+        @include configProductosNotebook();
+    }
+
+    .productosDoce {
+        @include configProductosNotebook();
+    }
     .sectionProductos {
         width: 100px;
         height: 100px;
@@ -904,23 +1243,8 @@ body {
         justify-content: center;
         margin: 50px auto 50px auto;
     }
+    .footer{
+        margin-top: 100px;
+    }
 
 }
-
-// EJERCICIO SOLO PARA ACTIVIDAD
-// $fondoColor: (
-
-//     bg1: white,
-//     bg2: blue,
-//     bg3: green,
-//     );
-
-// @each $bg, $color in $fondoColor {
-//     .wallpaper--#{$bg} {   
-//         width: 100%;
-//         background-color: $color;
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//         background-position: center;
-//     } 
-// }    
