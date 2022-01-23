@@ -258,8 +258,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin: 70px auto 150px auto;
 }
 
 .sectionNosotros {
