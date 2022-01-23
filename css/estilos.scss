@@ -49,7 +49,7 @@ $colorPrincipal: #E3B309;
 }
 
 @mixin brightnessPics() {
-    filter: brightness(50%);
+    transform: scale(1.1);
 }
 
 @mixin configIndexContent() {
@@ -254,9 +254,7 @@ body {
 .sectionProductos {
     display: flex;
     justify-content: center;
-    margin: 70px auto 150px auto;
-    // margin-top: 70px;
-    // margin-bottom: 770px;
+    margin: 70px auto auto auto;
 }
 
 .sectionNosotros {
@@ -276,17 +274,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
         width: 500px;
         border-radius: 800px;
         margin: auto 50px;
     }
 
-    
+
 
 }
-.textInBox{
-    
+
+.textInBox {
+
     img {
         width: 600px;
         height: 400px;
@@ -294,6 +294,7 @@ body {
         margin: auto 50px;
         transition: transform .4s;
     }
+
     h2 {
         font-family: 'Bebas Neue', cursive !important;
         position: absolute;
@@ -302,16 +303,17 @@ body {
         visibility: hidden;
         transition: transform .4s;
     }
+
     &:hover {
-        img{
-                transform: scale(1.1);
-                filter: brightness(40%);
-            }
-        h2{
+        img {
+            filter: brightness(40%);
+        }
+
+        h2 {
             visibility: visible;
             transform: scale(1.3);
         }
-            
+
     }
 }
 
@@ -571,22 +573,27 @@ body {
         font-size: 20px;
         color: white;
         visibility: hidden;
+
     }
 }
-
+.holajaja{
+    font-family: 'Roboto', cursive;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 28px;
+     margin: auto;
+}
 .productosUno {
     background-image: url(../img/Foto1.webp);
     @include configIndexContent();
 
     &:hover {
         @include brightnessPics();
-        p{
-            filter: brightness(100%);
-            visibility: visible;
-        }
-        
     }
 }
+
 .productosDos {
     background-image: url(../img/Foto2.webp);
     @include configIndexContent();
@@ -1126,6 +1133,7 @@ body {
         margin: auto;
         @include configIndexNotebook();
     }
+
     .contenedorProductos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1186,6 +1194,7 @@ body {
     .productosDoce {
         @include configProductosNotebook();
     }
+
     .sectionProductos {
         width: 100px;
         height: 100px;
@@ -1253,7 +1262,8 @@ body {
         justify-content: center;
         margin: 50px auto 50px auto;
     }
-    .footer{
+
+    .footer {
         margin-top: 100px;
     }
 

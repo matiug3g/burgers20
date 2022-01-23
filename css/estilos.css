@@ -258,7 +258,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 70px auto 150px auto;
+  margin: 70px auto auto auto;
 }
 
 .sectionNosotros {
@@ -336,8 +336,6 @@ body {
 }
 
 .textInBox:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   -webkit-filter: brightness(40%);
           filter: brightness(40%);
 }
@@ -689,6 +687,20 @@ body {
   visibility: hidden;
 }
 
+.holajaja {
+  font-family: 'Roboto', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 30px;
+  font-size: 28px;
+  margin: auto;
+}
+
 .productosUno {
   background-image: url(../img/Foto1.webp);
   background-size: cover;
@@ -705,14 +717,8 @@ body {
 }
 
 .productosUno:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-}
-
-.productosUno:hover p {
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
-  visibility: visible;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosDos {
@@ -731,8 +737,8 @@ body {
 }
 
 .productosDos:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosTres {
@@ -751,8 +757,8 @@ body {
 }
 
 .productosTres:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosCuatro {
@@ -771,8 +777,8 @@ body {
 }
 
 .productosCuatro:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosCinco {
@@ -791,8 +797,8 @@ body {
 }
 
 .productosCinco:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosSeis {
@@ -811,8 +817,8 @@ body {
 }
 
 .productosSeis:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosSiete {
@@ -831,8 +837,8 @@ body {
 }
 
 .productosSiete:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosOcho {
@@ -851,8 +857,8 @@ body {
 }
 
 .productosOcho:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosNueve {
@@ -871,8 +877,8 @@ body {
 }
 
 .productosNueve:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosDiez {
@@ -891,8 +897,8 @@ body {
 }
 
 .productosDiez:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosOnce {
@@ -911,8 +917,8 @@ body {
 }
 
 .productosOnce:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productosDoce {
@@ -931,8 +937,8 @@ body {
 }
 
 .productosDoce:hover {
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* fin section contenedor imgs */
