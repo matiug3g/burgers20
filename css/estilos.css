@@ -660,7 +660,7 @@ body {
 }
 
 .contenedorProductos {
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (19%)[4];
@@ -670,24 +670,40 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 200px;
 }
 
-.contenedorProductos p {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contenedorProductos h2 {
+  position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  margin: auto;
-  font-size: 20px;
-  color: white;
   visibility: hidden;
 }
 
-.holajaja {
+.contenedorProductos img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.contenedorProductos img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sectionprodText {
   font-family: 'Roboto', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,246 +715,6 @@ body {
   line-height: 30px;
   font-size: 28px;
   margin: auto;
-}
-
-.productosUno {
-  background-image: url(../img/Foto1.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosUno:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosDos {
-  background-image: url(../img/Foto2.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosDos:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosTres {
-  background-image: url(../img/Foto3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosTres:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosCuatro {
-  background-image: url(../img/Foto4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosCuatro:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosCinco {
-  background-image: url(../img/Foto5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosCinco:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosSeis {
-  background-image: url(../img/Foto6.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosSeis:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosSiete {
-  background-image: url(../img/Foto7.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosSiete:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosOcho {
-  background-image: url(../img/Foto8.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosOcho:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosNueve {
-  background-image: url(../img/Foto9.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosNueve:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosDiez {
-  background-image: url(../img/Foto12.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosDiez:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosOnce {
-  background-image: url(../img/Foto14.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosOnce:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.productosDoce {
-  background-image: url(../img/Foto18.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-}
-
-.productosDoce:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 /* fin section contenedor imgs */
@@ -1009,93 +785,28 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (12%)[10];
-        grid-template-rows: repeat(10, 12%);
+    -ms-grid-rows: (8.3%)[12];
+        grid-template-rows: repeat(12, 8.3%);
   }
-  .productosUno {
+  .contenedorProductos img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    margin: auto auto 10px auto;
+  }
+  .sectionprodText {
+    line-height: 30px;
+    font-size: 18px;
     margin: auto;
   }
-  .productosDos {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosTres {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosCuatro {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosCinco {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosSeis {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosSiete {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosOcho {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosNueve {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-  }
-  .productosDiez {
-    display: none;
-  }
-  .productosOnce {
-    display: none;
-  }
-  .productosDoce {
-    display: none;
+  .oculto {
+    visibility: hidden;
   }
   .sectionProductos {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1235,112 +946,17 @@ body {
     -ms-grid-rows: (20%)[5];
         grid-template-rows: repeat(5, 20%);
   }
-  .productosUno {
+  .contenedorProductos img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
     margin: auto;
   }
-  .productosDos {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosTres {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosCuatro {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosCinco {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosSeis {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosSiete {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosOcho {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosNueve {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosDiez {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosOnce {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
-    margin: auto;
-  }
-  .productosDoce {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
+  .sectionprodText {
+    line-height: 30px;
+    font-size: 26px;
     margin: auto;
   }
   .sectionProductos {
@@ -1420,7 +1036,7 @@ body {
     margin: 50px auto 50px auto;
   }
   .footer {
-    margin-top: 250px;
+    margin-top: 300px;
   }
 }
 

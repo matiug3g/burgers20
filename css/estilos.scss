@@ -48,10 +48,6 @@ $colorPrincipal: #E3B309;
     filter: brightness(90%);
 }
 
-@mixin brightnessPics() {
-    transform: scale(1.1);
-}
-
 @mixin configIndexContent() {
     background-size: cover;
     background-repeat: no-repeat;
@@ -317,7 +313,6 @@ body {
     }
 }
 
-
 .boxAll {
     display: flex;
     gap: 150px;
@@ -558,139 +553,43 @@ body {
 }
 
 .contenedorProductos {
-    margin: 50px auto;
+    margin: 50px auto 100px auto;
     display: grid;
     grid-template-columns: repeat(4, 19%);
     grid-template-rows: repeat(3, 35%);
     justify-content: center;
-    margin-bottom: 200px;
 
-    p {
-        align-items: center;
+    h2 {
+        position: absolute;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        margin: auto;
-        font-size: 20px;
-        color: white;
         visibility: hidden;
+    }
 
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 500px;
+        border-radius: 15px;
+        display: grid;
+        transition: transform .4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
-.holajaja{
+
+.sectionprodText {
     font-family: 'Roboto', cursive;
     display: flex;
     text-align: center;
     justify-content: center;
     line-height: 30px;
     font-size: 28px;
-     margin: auto;
-}
-.productosUno {
-    background-image: url(../img/Foto1.webp);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosDos {
-    background-image: url(../img/Foto2.webp);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosTres {
-    background-image: url(../img/Foto3.jpg);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosCuatro {
-    background-image: url(../img/Foto4.jpg);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosCinco {
-    background-image: url(../img/Foto5.jpg);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosSeis {
-    background-image: url(../img/Foto6.webp);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosSiete {
-    background-image: url(../img/Foto7.jpg);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosOcho {
-    background-image: url(../img/Foto8.jpg);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosNueve {
-    background-image: url(../img/Foto9.JPG);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosDiez {
-    background-image: url(../img/Foto12.jpg);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosOnce {
-    background-image: url(../img/Foto14.JPG);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
-}
-
-.productosDoce {
-    background-image: url(../img/Foto18.webp);
-    @include configIndexContent();
-
-    &:hover {
-        @include brightnessPics();
-    }
+    margin: auto;
 }
 
 /* fin section contenedor imgs */
@@ -755,72 +654,32 @@ body {
         margin: auto;
         @include configIndexMobile();
     }
-
     .contenedorProductos {
+        
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 12%);
-    }
+        grid-template-rows: repeat(12, 8.3%);
+        img{
 
-    @mixin configProductosMobile {
         justify-content: center;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
+        margin: auto auto 10px auto;
+        }
+
+    }
+    .sectionprodText {
+        line-height: 30px;
+        font-size: 18px;
         margin: auto;
     }
-
-    .productosUno {
-        @include configProductosMobile();
+    .oculto{
+        visibility: hidden;
     }
-
-    .productosDos {
-        @include configProductosMobile();
-    }
-
-    .productosTres {
-        @include configProductosMobile();
-    }
-
-    .productosCuatro {
-        @include configProductosMobile();
-    }
-
-    .productosCinco {
-        @include configProductosMobile();
-    }
-
-    .productosSeis {
-        @include configProductosMobile();
-    }
-
-    .productosSiete {
-        @include configProductosMobile();
-    }
-
-    .productosOcho {
-        @include configProductosMobile();
-    }
-
-    .productosNueve {
-        @include configProductosMobile();
-    }
-
-    .productosDiez {
-        display: none;
-    }
-
-    .productosOnce {
-        display: none;
-    }
-
-    .productosDoce {
-        display: none;
-    }
-
     .sectionProductos {
 
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         justify-content: center;
         margin: 50px auto 50px auto;
     }
@@ -886,7 +745,6 @@ body {
         margin: 50px auto 50px auto;
     }
 
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -945,65 +803,22 @@ body {
     }
 
     .contenedorProductos {
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 20%);
-    }
-
-    @mixin configProductosMore {
+        img{
         justify-content: center;
-        width: 200px;
-        height: 200px;
-        margin-bottom: 30px;
+        width: 250px;
+        height: 250px;
         margin: auto;
-    }
+        }
 
-    .productosUno {
-        @include configProductosMore();
     }
-
-    .productosDos {
-        @include configProductosMore();
-    }
-
-    .productosTres {
-        @include configProductosMore();
-    }
-
-    .productosCuatro {
-        @include configProductosMore();
-    }
-
-    .productosCinco {
-        @include configProductosMore();
-    }
-
-    .productosSeis {
-        @include configProductosMore();
-    }
-
-    .productosSiete {
-        @include configProductosMore();
-    }
-
-    .productosOcho {
-        @include configProductosMore();
-    }
-
-    .productosNueve {
-        @include configProductosMore();
-    }
-
-    .productosDiez {
-        @include configProductosMore();
-    }
-
-    .productosOnce {
-        @include configProductosMore();
-    }
-
-    .productosDoce {
-        @include configProductosMore();
+    .sectionprodText {
+        line-height: 30px;
+        font-size: 26px;
+        margin: auto;
     }
 
     .sectionProductos {
@@ -1075,7 +890,7 @@ body {
     }
 
     .footer {
-        margin-top: 250px;
+        margin-top: 300px;
     }
 }
 
