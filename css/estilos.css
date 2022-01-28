@@ -60,7 +60,7 @@ body {
 .navbar a {
   text-decoration: none;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .navbar a:hover {
@@ -68,10 +68,10 @@ body {
 }
 
 .navbar ul li {
-  padding: 10px;
+  padding: 20px;
   display: inline-block;
   list-style: none;
-  margin: 0 20px;
+  margin: auto;
   -webkit-transition: -webkit-transform .9s;
   transition: -webkit-transform .9s;
   transition: transform .9s;
@@ -104,14 +104,14 @@ body {
   text-transform: uppercase;
   color: white;
   position: relative;
-  font-size: 35px;
+  font-size: 28px;
   left: 0px;
   top: 8px;
 }
 
 .logo img {
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
 }
 
 .logo h2 span {
@@ -131,12 +131,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 20px;
-  margin: auto auto auto 800px;
+  padding: 1px 15px;
+  margin: auto auto auto 400px;
   background-color: #E3B309;
   border-radius: 60px;
   color: #000;
-  font-size: 20px;
+  font-size: 16px;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: aparece;
@@ -184,7 +184,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 700px;
 }
 
 .hero2 {
@@ -192,7 +192,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 700px;
 }
 
 .hero3 {
@@ -200,11 +200,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 700px;
 }
 
 .contenedorHero {
-  height: 900px;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,17 +220,11 @@ body {
           align-items: center;
 }
 
-.contenedorHero h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 36px;
-  color: #E3B309;
-}
-
 .contenedorHero h1 {
   font-family: 'Bebas Neue', cursive;
-  font-size: 144px;
+  font-size: 130px;
   color: white;
-  margin-top: -30px;
+  margin-top: -10px;
 }
 
 .contenedorHero h1 span {
@@ -242,7 +236,7 @@ body {
   font-size: 72px;
   line-height: 0px;
   font-weight: 700px;
-  margin-top: -35px;
+  margin-top: -20px;
   color: #E3B309;
 }
 
@@ -258,7 +252,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 70px auto auto auto;
+  margin: 70px auto 50px auto;
+  height: 125px;
 }
 
 .sectionNosotros {
@@ -269,6 +264,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 70px;
+  height: 150px;
 }
 
 .sectionTrabaja {
@@ -279,6 +275,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 70px;
+  height: 150px;
 }
 
 .sectionContacto {
@@ -289,6 +286,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 70px;
+  height: 150px;
 }
 
 /* inicio de primera seccion */
@@ -302,17 +300,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 300px;
 }
 
 .boxImg img {
-  width: 500px;
+  width: 400px;
   border-radius: 800px;
-  margin: auto 50px;
+  margin: auto 40px;
 }
 
 .textInBox img {
-  width: 600px;
-  height: 400px;
+  width: 500px;
+  height: 300px;
   border-radius: 20px;
   margin: auto 50px;
   -webkit-transition: -webkit-transform .4s;
@@ -362,15 +361,15 @@ body {
 }
 
 .boxAll h2 {
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
   font-family: 'Great Vibes', cursive;
   font-weight: lighter;
 }
 
 .boxAll p {
-  font-size: 22px;
-  width: 1100px;
+  font-size: 16px;
+  width: 800px;
   line-height: 50px;
 }
 
@@ -384,10 +383,10 @@ body {
           justify-content: center;
   text-align: justify;
   margin: 50px auto 50px auto;
-  width: 800px;
+  width: 600px;
   padding: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid #999;
   border-radius: 10px;
 }
@@ -416,7 +415,7 @@ body {
 }
 
 .btn {
-  border-radius: 3px;
+  border-radius: 1px;
   height: 50px;
   display: inline-block;
   padding: 5px;
@@ -464,7 +463,7 @@ body {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .footer h3:hover {
@@ -526,10 +525,10 @@ body {
 }
 
 .footer .item.social > a {
-  font-size: 20px;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -567,16 +566,15 @@ body {
 }
 
 .contenedorImgs a {
-  font-family: 'Roboto', cursive;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .textoUbicacion {
   background-image: url(../img/Foto1.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border-radius: 15px;
   display: -ms-grid;
   display: grid;
@@ -597,8 +595,8 @@ body {
   background-image: url(../img/Foto18.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border-radius: 15px;
   display: -ms-grid;
   display: grid;
@@ -619,8 +617,8 @@ body {
   background-image: url(../img/Foto2.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border-radius: 15px;
   display: -ms-grid;
   display: grid;
@@ -641,8 +639,8 @@ body {
   background-image: url(../img/Foto6.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border-radius: 15px;
   display: -ms-grid;
   display: grid;
@@ -687,8 +685,8 @@ body {
 .contenedorProductos img {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border-radius: 15px;
   display: -ms-grid;
   display: grid;
@@ -713,7 +711,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 30px;
-  font-size: 28px;
+  font-size: 20px;
   margin: auto;
 }
 
@@ -831,7 +829,7 @@ body {
             flex-direction: column;
   }
   .boxImg Img {
-    width: 55%;
+    width: 80%;
     height: 30%;
     margin: auto;
   }
@@ -857,9 +855,10 @@ body {
   }
   .boxAll p {
     line-height: 30px;
-    font-size: 10px;
+    font-size: 16px;
     margin: auto;
     width: 300px;
+    text-align: center;
   }
   .sectionContacto {
     width: 50px;
@@ -968,8 +967,8 @@ body {
     margin: 50px auto 50px auto;
   }
   .sectionNosotros {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -986,8 +985,8 @@ body {
             flex-direction: column;
   }
   .boxImg Img {
-    width: 55%;
-    height: 30%;
+    width: 100%;
+    height: 40%;
     margin: auto;
   }
   .boxSection {
@@ -1007,14 +1006,15 @@ body {
     gap: 50px;
   }
   .boxAll h2 {
-    font-size: 55px;
+    font-size: 35px;
     margin: auto;
   }
   .boxAll p {
     line-height: 30px;
-    font-size: 15px;
+    font-size: 16px;
     margin: auto;
     width: 400px;
+    text-align: center;
   }
   .sectionContacto {
     width: 80px;
@@ -1103,100 +1103,17 @@ body {
     -ms-grid-rows: (27%)[4];
         grid-template-rows: repeat(4, 27%);
   }
-  .productosUno {
+  .contenedorProductos img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     margin: auto;
   }
-  .productosDos {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosTres {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosCuatro {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosCinco {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosSeis {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosSiete {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosOcho {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosNueve {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosDiez {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosOnce {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
-    margin: auto;
-  }
-  .productosDoce {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 350px;
-    height: 350px;
+  .sectionprodText {
+    line-height: 30px;
+    font-size: 26px;
     margin: auto;
   }
   .sectionProductos {
@@ -1226,8 +1143,8 @@ body {
             flex-direction: column;
   }
   .boxImg Img {
-    width: 40%;
-    height: 20%;
+    width: 100%;
+    height: 40%;
     margin: auto;
   }
   .boxSection {
@@ -1255,6 +1172,7 @@ body {
     font-size: 15px;
     margin: auto;
     width: 600px;
+    text-align: center;
   }
   .sectionContacto {
     width: 100px;
@@ -1276,7 +1194,7 @@ body {
     margin: 50px auto 50px auto;
   }
   .footer {
-    margin-top: 100px;
+    margin-top: 200px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

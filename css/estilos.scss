@@ -51,8 +51,8 @@ $colorPrincipal: #E3B309;
 @mixin configIndexContent() {
     background-size: cover;
     background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     border-radius: 15px;
     display: grid;
     transition: transform .4s;
@@ -81,7 +81,7 @@ body {
     a {
         text-decoration: none;
         font-weight: bolder;
-        font-size: 22px;
+        font-size: 16px;
 
         &:hover {
             color: $colorPrincipal !important;
@@ -89,10 +89,10 @@ body {
     }
 
     ul li {
-        padding: 10px;
+        padding: 20px;
         display: inline-block;
         list-style: none;
-        margin: 0 20px;
+        margin: auto;
         transition: transform .9s;
 
         &:hover {
@@ -118,14 +118,14 @@ body {
         text-transform: uppercase;
         color: white;
         position: relative;
-        font-size: 35px;
+        font-size: 28px;
         left: 0px;
         top: 8px;
     }
 
     img {
-        width: 150px;
-        height: 150px;
+        width: 110px;
+        height: 110px;
     }
 
     h2 span {
@@ -143,12 +143,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
-        margin: auto auto auto 800px;
+        padding: 1px 15px;
+        margin: auto auto auto 400px;
         background-color: $colorPrincipal;
         border-radius: 60px;
         color: #000;
-        font-size: 20px;
+        font-size: 16px;
         animation-duration: 3s;
         animation-name: aparece;
         animation-delay: 1s;
@@ -184,7 +184,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 700px;
 }
 
 .hero {
@@ -203,23 +203,17 @@ body {
 }
 
 .contenedorHero {
-    height: 900px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    h2 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 36px;
-        color: $colorPrincipal;
-    }
-
     h1 {
         font-family: 'Bebas Neue', cursive;
-        font-size: 144px;
+        font-size: 130px;
         color: white;
-        margin-top: -30px;
+        margin-top: -10px;
     }
 
     h1 span {
@@ -231,7 +225,7 @@ body {
         font-size: 72px;
         line-height: 0px;
         font-weight: 700px;
-        margin-top: -35px;
+        margin-top: -20px;
         color: $colorPrincipal;
     }
 
@@ -245,12 +239,14 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 70px;
+    height: 150px;
 }
 
 .sectionProductos {
     display: flex;
     justify-content: center;
-    margin: 70px auto auto auto;
+    margin: 70px auto 50px auto;
+    height: 125px;
 }
 
 .sectionNosotros {
@@ -270,11 +266,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
 
     img {
-        width: 500px;
+        width: 400px;
         border-radius: 800px;
-        margin: auto 50px;
+        margin: auto 40px;
     }
 
 
@@ -284,8 +281,9 @@ body {
 .textInBox {
 
     img {
-        width: 600px;
-        height: 400px;
+
+        width: 500px;
+        height: 300px;
         border-radius: 20px;
         margin: auto 50px;
         transition: transform .4s;
@@ -322,15 +320,15 @@ body {
     width: 100%;
 
     h2 {
-        font-size: 100px;
+        font-size: 80px;
         text-align: center;
         font-family: 'Great Vibes', cursive;
         font-weight: lighter;
     }
 
     p {
-        font-size: 22px;
-        width: 1100px;
+        font-size: 16px;
+        width: 800px;
         line-height: 50px;
     }
 }
@@ -342,10 +340,10 @@ body {
     justify-content: center;
     text-align: justify;
     margin: 50px auto 50px auto;
-    width: 800px;
+    width: 600px;
     padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     border: 1px solid #999;
     border-radius: 10px;
 
@@ -374,7 +372,7 @@ body {
 }
 
 .btn {
-    border-radius: 3px;
+    border-radius: 1px;
     height: 50px;
     display: inline-block;
     padding: 5px;
@@ -421,7 +419,7 @@ body {
         margin-top: 0;
         margin-bottom: 12px;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     h3:hover {
@@ -480,10 +478,10 @@ body {
 }
 
 .footer .item.social>a {
-    font-size: 20px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -511,8 +509,8 @@ body {
     justify-content: center;
 
     a {
-        font-family: 'Roboto', cursive;
-        font-size: 25px;
+        // font-family: 'Roboto', cursive;
+        font-size: 20px;
     }
 }
 
@@ -570,8 +568,8 @@ body {
     img {
         background-size: cover;
         background-repeat: no-repeat;
-        width: 500px;
-        height: 500px;
+        width: 350px;
+        height: 350px;
         border-radius: 15px;
         display: grid;
         transition: transform .4s;
@@ -588,7 +586,7 @@ body {
     text-align: center;
     justify-content: center;
     line-height: 30px;
-    font-size: 28px;
+    font-size: 20px;
     margin: auto;
 }
 
@@ -697,7 +695,7 @@ body {
         flex-direction: column;
 
         Img {
-            width: 55%;
+            width: 80%;
             height: 30%;
             margin: auto;
         }
@@ -720,9 +718,10 @@ body {
 
         p {
             line-height: 30px;
-            font-size: 10px;
+            font-size: 16px;
             margin: auto;
             width: 300px;
+            text-align: center;
 
         }
     }
@@ -829,8 +828,8 @@ body {
     }
 
     .sectionNosotros {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         justify-content: center;
         margin: 50px auto 50px auto;
     }
@@ -841,8 +840,8 @@ body {
         flex-direction: column;
 
         Img {
-            width: 55%;
-            height: 30%;
+            width: 100%;
+            height: 40%;
             margin: auto;
         }
     }
@@ -858,15 +857,16 @@ body {
         gap: 50px;
 
         h2 {
-            font-size: 55px;
+            font-size: 35px;
             margin: auto;
         }
 
         p {
             line-height: 30px;
-            font-size: 15px;
+            font-size: 16px;
             margin: auto;
             width: 400px;
+            text-align: center;
         }
 
     }
@@ -950,66 +950,23 @@ body {
     }
 
     .contenedorProductos {
+        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 27%);
-    }
-
-    @mixin configProductosNotebook {
+        img{
         justify-content: center;
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        }
+
+    }
+    .sectionprodText {
+        line-height: 30px;
+        font-size: 26px;
         margin: auto;
     }
-
-    .productosUno {
-        @include configProductosNotebook();
-    }
-
-    .productosDos {
-        @include configProductosNotebook();
-    }
-
-    .productosTres {
-        @include configProductosNotebook();
-    }
-
-    .productosCuatro {
-        @include configProductosNotebook();
-    }
-
-    .productosCinco {
-        @include configProductosNotebook();
-    }
-
-    .productosSeis {
-        @include configProductosNotebook();
-    }
-
-    .productosSiete {
-        @include configProductosNotebook();
-    }
-
-    .productosOcho {
-        @include configProductosNotebook();
-    }
-
-    .productosNueve {
-        @include configProductosNotebook();
-    }
-
-    .productosDiez {
-        @include configProductosNotebook();
-    }
-
-    .productosOnce {
-        @include configProductosNotebook();
-    }
-
-    .productosDoce {
-        @include configProductosNotebook();
-    }
-
     .sectionProductos {
         width: 100px;
         height: 100px;
@@ -1030,8 +987,8 @@ body {
         flex-direction: column;
 
         Img {
-            width: 40%;
-            height: 20%;
+            width: 100%;
+            height: 40%;
             margin: auto;
         }
 
@@ -1057,6 +1014,7 @@ body {
             font-size: 15px;
             margin: auto;
             width: 600px;
+            text-align: center;
         }
     }
 
@@ -1079,7 +1037,7 @@ body {
     }
 
     .footer {
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
 }
