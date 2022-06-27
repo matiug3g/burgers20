@@ -120,6 +120,24 @@ body {
   position: absolute;
 }
 
+@-webkit-keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
 .btnPedido a {
   font-family: 'Fuente2';
   display: -webkit-box;

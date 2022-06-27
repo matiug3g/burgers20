@@ -137,6 +137,12 @@ body {
 
 }
 
+@keyframes escribir {
+
+    from { width: 100% }
+    to { width:0 }
+}
+
 .btnPedido {
     a {
         font-family: 'Fuente2';
